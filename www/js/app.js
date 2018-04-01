@@ -55,6 +55,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 
-  $urlRouterProvider.otherwise('/tab/Weather');
+  $urlRouterProvider.otherwise('/tab/weather');
 
 });
