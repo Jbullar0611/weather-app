@@ -1,0 +1,40 @@
+<ion-view view-title="Weather">
+  <ion-content class="padding">
+    <div class="main">
+      <div class="weather-details">
+        <!--current temp, description, location,humidity, previous day, tomorrow-->
+        <h1><i ng-class="{'ion-android-sunny':(data.currentTemp>0),'ion-ios-cloud':(data.currentTemp<=0)}"></i>&nbsp;{{data.currentTemp}}&deg;</h1>
+        <h3>{{data.description}}</h3>
+        <h4>{{city}}</h4>
+      </div>
+      <div class="select-city">
+        
+        <div class="list">
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              <b>Select City</b>
+            </div>
+            <select ng-class="slctCity" ng-model="city" ng-change="selectedCity(city)">
+              <option value="Kitchener" selected>Kitchener</option>
+              <option value="Waterloo">Waterloo</option>
+              <option value="Toronto">Toronto</option>
+              <option value="Brampton">Brampton</option>
+              <option value="Vancouver">Vancouver</option>
+            </select>
+          </label>
+        
+        </div>
+      </div>
+      
+      <div class="list list-inset bottom-list">
+          <div class="item">
+            Yesterday's Temperature: <span style="font-weight:bolder;float:right;">{{data.yesterday}}&deg;</span>
+          </div>
+          <div class="item">
+              Tomorrows's Temperature: <span style="font-weight:bolder;float:right;">{{data.tomorrow}}&deg;</span>
+            </div>      
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

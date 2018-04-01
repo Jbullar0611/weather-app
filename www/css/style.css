@@ -1,1 +1,87 @@
 /* Empty. Add your own CSS if you like */
+.weather-details{
+    text-align: center;
+}
+.weather-details h1{
+    font-size: 5em;
+    color: white;
+    font-family: Times New Roman;
+}
+
+.weather-details h3{
+    color: white;
+    font-family: Times New Roman;
+}
+
+.weather-details h4{
+    color: white;
+    font-family: Times New Roman;
+}
+
+.select-city label{
+    background-color: #f3e5f5;
+} 
+
+.select-city label div{
+    font-size: 150%;
+    font-family: Times New Roman;
+    color: tomato;
+}
+
+.select-city select{
+    background-color: #e0f2f1;
+    font-family: Times New Roman;
+    font-weight: bold;
+    font-size: 150%;
+    color: tomato;
+}
+
+.select-city slctCity{
+    font-size: 90%;
+}
+
+.select-city {
+    margin-top: 5em;
+    background-color: #cddc39;
+}
+
+.bottom-list
+{
+    margin-top: 6em;
+}
+
+.bottom-list div{
+    background-color:  white;
+    color: black;
+    font-size: 150%;
+    font-family: Bookman, serif;
+}
+
+ion-content{
+    background-image: url("../img/backpic.jpg");
+    background-size: cover;
+}
+
+.video iframe{
+    
+    margin-left: 1.90em;
+}
+
+.main1{
+    font-size: 200%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.help-detail h4{
+    color: white;
+}
+
+.about-detail h3{
+    font-family: 'Courier New', Courier, monospace;
+   color: white; 
+}
+
+.about-detail h4{
+    text-align: center;
+    color: white;
+}
